@@ -13,11 +13,13 @@ handle = "vald"
 # Controls where in Shopify your extension will be injected,
 # and the file that contains your extension’s source code. Learn more:
 # https://shopify.dev/docs/api/checkout-ui-extensions/unstable/targets-overview
+
 [[extensions.targeting]]
 target = "purchase.checkout.contact.render-after"
 module = "./src/Checkout.jsx"
 [extensions.capabilities]
 block_progress = true
+api_access = true
 
 # Gives your extension access to make external network calls, using the
 # JavaScript `fetch()` API. Learn more:
